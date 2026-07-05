@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 400px;
+        }
+        h1 { color: #1a73e8; }
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+        .high-risk { color: red; }
+        .low-risk  { color: green; }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background: #1a73e8;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+        a:hover { background: #1558b0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🌊 Prediction Result</h1>
+
+    {% if color == "red" %}
+        <div class="result high-risk">{{ result }}</div>
+    {% else %}
+        <div class="result low-risk">{{ result }}</div>
+    {% endif %}
+
+    <a href="/">🔙 Predict Again</a>
+</div>
+</body>
+</html>

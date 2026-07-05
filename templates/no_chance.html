@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>✅ No Flood Risk - Rising Waters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">🌊 Rising Waters</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/index">Predict</a>
+        </div>
+    </nav>
+
+    <div class="result-wrapper">
+        <div class="result-card safe">
+            <div class="result-icon">✅</div>
+            <h1>LOW FLOOD RISK — SAFE</h1>
+            <p class="result-message">
+                Based on the entered weather parameters, our ML model indicates
+                <strong>no significant flood risk</strong> in this region at this time.
+            </p>
+
+            <div class="safe-box">
+                <h3>✅ Recommended Actions:</h3>
+                <ul>
+                    <li>Continue monitoring weather conditions regularly</li>
+                    <li>Maintain drainage and water management systems</li>
+                    <li>Keep emergency response teams on standby</li>
+                    <li>Update predictions as new weather data arrives</li>
+                </ul>
+            </div>
+
+            <div class="result-actions">
+                <a href="/index" class="btn-predict">🔍 Predict Again</a>
+                <a href="/" class="btn-secondary">🏠 Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

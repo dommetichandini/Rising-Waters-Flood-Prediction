@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rising Waters - Flood Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">🌊 Rising Waters</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/index">Predict</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Rising Waters</h1>
+            <p class="hero-sub">AI-Powered Flood Prediction System</p>
+            <p class="hero-desc">
+                Floods are among the most devastating natural disasters, claiming thousands
+                of lives every year. Rising Waters uses Machine Learning to predict flood
+                risks early — giving authorities time to act and save lives.
+            </p>
+            <a href="/index" class="btn-primary">🔍 Predict Flood Risk</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <h2>115+</h2>
+                <p>Weather Records Analysed</p>
+            </div>
+            <div class="stat-card">
+                <h2>100%</h2>
+                <p>Model Accuracy</p>
+            </div>
+            <div class="stat-card">
+                <h2>4</h2>
+                <p>ML Models Compared</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>How It Works</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span>📊</span>
+                <h3>Data Analysis</h3>
+                <p>Historical weather data including rainfall, temperature, humidity and cloud cover is analysed.</p>
+            </div>
+            <div class="feature-card">
+                <span>🤖</span>
+                <h3>ML Prediction</h3>
+                <p>Decision Tree, Random Forest, KNN and XGBoost models are trained and compared.</p>
+            </div>
+            <div class="feature-card">
+                <span>⚠️</span>
+                <h3>Early Warning</h3>
+                <p>Authorities receive instant flood risk classifications to plan evacuations in advance.</p>
+            </div>
+            <div class="feature-card">
+                <span>🌍</span>
+                <h3>Scalable</h3>
+                <p>Designed for deployment on IBM Cloud — accessible from any location, anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>🌊 Rising Waters — Flood Prediction System | Internship Project 2026</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

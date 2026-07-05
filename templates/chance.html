@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>⚠️ Flood Risk Detected - Rising Waters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">🌊 Rising Waters</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/index">Predict</a>
+        </div>
+    </nav>
+
+    <div class="result-wrapper">
+        <div class="result-card danger">
+            <div class="result-icon">⚠️</div>
+            <h1>HIGH FLOOD RISK DETECTED</h1>
+            <p class="result-message">
+                Based on the entered weather parameters, our ML model has identified
+                a <strong>high probability of flooding</strong> in this region.
+            </p>
+
+            <div class="alert-box">
+                <h3>🚨 Recommended Actions:</h3>
+                <ul>
+                    <li>Issue immediate evacuation advisories</li>
+                    <li>Alert disaster management teams</li>
+                    <li>Deploy emergency resources to flood-prone areas</li>
+                    <li>Monitor water levels continuously</li>
+                    <li>Ensure relief camps are ready</li>
+                </ul>
+            </div>
+
+            <div class="result-actions">
+                <a href="/index" class="btn-predict">🔍 Predict Again</a>
+                <a href="/" class="btn-secondary">🏠 Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
